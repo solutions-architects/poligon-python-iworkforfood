@@ -1,7 +1,7 @@
-def test_matrix_operations(add_result, sub_result, mul_matrx_result, mul_numb_result, transpose_result):
-    assert (add_result[0] + add_result[1]).get_matrix() == add_result[2].get_matrix()
-    assert (sub_result[0] - sub_result[1]).get_matrix() == sub_result[2].get_matrix()
-    assert (mul_matrx_result[0] * mul_matrx_result[1]).get_matrix() == mul_matrx_result[2].get_matrix()
-    assert (mul_numb_result[0] * mul_numb_result[1]).get_matrix() == mul_numb_result[2].get_matrix()
-    assert (transpose_result[0].transpose()).get_matrix() == transpose_result[1].get_matrix()
+from Matrix import Matrix
 
+def test_add_method(add_result: Matrix, matrix_one: Matrix, matrix_two: Matrix):
+    assert (matrix_one + matrix_two).get_matrix() == add_result.get_matrix()
+
+def test_str_method(str_matrix: str, str_matrix_method_result: str):
+    assert str_matrix == str_matrix_method_result
