@@ -1,4 +1,4 @@
-from Matrix import Matrix
+from matrix import Matrix
 
 def test_add_method(add_result: Matrix, matrix_one: Matrix, matrix_two: Matrix):
     assert (matrix_one + matrix_two).get_matrix() == add_result.get_matrix()

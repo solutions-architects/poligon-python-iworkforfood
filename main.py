@@ -1,4 +1,4 @@
-from Matrix import Matrix
+from matrix import Matrix
 
 if __name__ == "__main__":
 
