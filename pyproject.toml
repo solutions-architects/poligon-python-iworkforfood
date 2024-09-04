@@ -6,7 +6,7 @@ authors = ["Bezizvestnyi <chikovm@bk.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 pytest = "^8.3.2"
 
 
