@@ -9,7 +9,7 @@ class Matrix:
     """
 
     def __init__(self: Self, columns: list[list[int | float]]) -> None:
-        """init method"""
+        """init method."""
         for current_column in columns:
             if len(current_column) != len(columns[0]):
                 raise Exception("Size mismatch")
@@ -23,7 +23,7 @@ class Matrix:
 
 
     def __add__(self: Self, added_matrix: Self) -> Self:
-        """add method"""
+        """add method."""
         columns_of_added_matrix = added_matrix.matrix
         new_matrix = []
 
@@ -42,11 +42,11 @@ class Matrix:
         return Matrix(new_matrix)
 
     def __iadd__(self, other: Self) -> Self:
-        """iadd method"""
+        """iadd method."""
         return self.__add__(other)
 
     def get_matrix(self) -> list[list[int | float]]:
-        """Method for getting matrix representation as an array"""
+        """Method for getting matrix representation as an array."""
         return self.matrix
 
     def __str__(self: Self) -> str:
